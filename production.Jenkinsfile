@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('clean_workspace_and_checkout_source') {
             steps {
-                sh(ls)
+                sh('ls -lh')
                 deleteDir()
                 checkout scm
             }
