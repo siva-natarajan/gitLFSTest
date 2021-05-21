@@ -11,8 +11,8 @@ pipeline {
       }
     }
     stage('check git file size') {
-        step {
-            sh "du -sh .git"
+        steps {
+            sh("du -sh .git")
         }
     }
     stage('build') {
