@@ -7,7 +7,6 @@ pipeline {
         stage('clean_workspace_and_checkout_source') {
             steps {
                 sh(ls)
-                sh(git status)
                 deleteDir()
                 checkout scm
             }
