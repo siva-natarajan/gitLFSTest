@@ -1,16 +1,16 @@
 pipeline {
     agent any
-    options {
-        skipDefaultCheckout true
-    }
+    // options {
+    //     skipDefaultCheckout true
+    // }
     stages {
-        stage('clean_workspace_and_checkout_source') {
-            steps {
-                sh('ls -lh')
-                deleteDir()
-                checkout scm
-            }
-        }
+        // stage('clean_workspace_and_checkout_source') {
+        //     steps {
+        //         sh('ls -lh')
+        //         deleteDir()
+        //         checkout scm
+        //     }
+        // }
         stage('check git file size') {
             steps {
                 sh('du -sh .git')
